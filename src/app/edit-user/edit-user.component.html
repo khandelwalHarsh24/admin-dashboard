@@ -1,0 +1,18 @@
+<div>
+    <h2>Edit User</h2>
+    <form (ngSubmit)="saveChanges()">
+      <!-- Add form fields for editing user details -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="user.name" name="name" >
+  
+      <!-- Add other form fields based on your User model -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="user.email" name="email" >
+
+      <label for="role">Role:</label>
+      <input type="text" id="role" [(ngModel)]="user.role" name="role">
+  
+      <button type="submit">Save Changes</button>
+      <button (click)="goBack()">Back</button>
+    </form>
+</div>
